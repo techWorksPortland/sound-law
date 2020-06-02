@@ -43,11 +43,12 @@
     padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
 
   #mainNav .navbar-brand {
-    font-size: 1.25em;
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
   }
 
   #mainNav .navbar-brand img {
@@ -59,7 +60,6 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #212529;
-    transition: background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
 
   #mainNav.navbar-shrink .navbar-brand {
@@ -68,7 +68,7 @@
 
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 2rem;
+    height: 1.5rem;
   }
 
   #mainNav .navbar-nav .nav-item {
@@ -78,11 +78,6 @@
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
   }
-}
-
-.navbar a:hover{
-  text-decoration: none;
-  color: #cdba6d;
 }
 
 .text-shadow {
