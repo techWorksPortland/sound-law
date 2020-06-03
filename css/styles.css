@@ -502,6 +502,21 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+#contactButton{
+  display: inline-block;
+}
+
+.contact a{
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+
+
+.contact a:hover{
+  text-decoration: none;
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
