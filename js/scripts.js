@@ -50,21 +50,3 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
-
-// email copy
-
-$(document).ready(function() {
-    const copyToClipboard = _ => {
-        let temp = $('<input id="huh">');
-        $('body').append(temp);
-        $('#huh').val('ryan@soundlaw.net');
-        $('#huh').select();
-        document.execCommand('copy');
-        temp.remove();
-        alert('ryan@soundlaw.net copied to clipboard.')
-      }
-
-      $('.emailCopied').click(function() {
-        copyToClipboard();
-      });
-});
