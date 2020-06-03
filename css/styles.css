@@ -86,6 +86,7 @@
 
 .navbar-brand-header {
   font-size: 1.7rem;
+  margin-top: 5px !important;
 }
 
 header.masthead {
