@@ -550,3 +550,17 @@ section#contact form#contactForm :-ms-input-placeholder {
 .call-now {
   height: 100%;
 }
+
+#small-title {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  #large-title, .navbar-brand {
+    display: none;
+  }
+
+  #small-title {
+    display: block;
+  }
+}
