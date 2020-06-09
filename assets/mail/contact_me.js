@@ -21,7 +21,7 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "/assets/mail/contact_me.php",
+                url: "https://hungry-brahmagupta-e23c8a.netlify.app/assets/mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
