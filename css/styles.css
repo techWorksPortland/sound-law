@@ -564,8 +564,12 @@ section#contact form#contactForm :-ms-input-placeholder {
     display: block;
   }
 
-  .timeline-body {
+  .timeline-body, .timeline-heading {
     margin-left: -45px;
+  }
+
+  .timeline-image {
+    display: none;
   }
 }
 
