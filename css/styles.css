@@ -37,12 +37,37 @@
   color: #cdba6d;
 }
 
+#mainNav a:hover{
+  text-decoration: none;
+  color: #cdba6d;
+}
+
+#mainNav.servicesNav .navbar-nav .nav-item .nav-link{
+  color: black;
+}
+
+#mainNav.servicesNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+#mainNav.servicesNav .navbar-nav .nav-item .nav-link.active, #mainNav.servicesNav .navbar-nav .nav-item .nav-link:hover {
+  color: #cdba6d;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
+    transition: background-color 0.5s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+
+  #mainNav.servicesNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: white;
     transition: background-color 0.5s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
 
