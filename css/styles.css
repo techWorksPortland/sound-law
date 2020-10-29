@@ -37,12 +37,37 @@
   color: #cdba6d;
 }
 
+#mainNav a:hover{
+  text-decoration: none;
+  color: #cdba6d;
+}
+
+#mainNav.servicesNav .navbar-nav .nav-item .nav-link{
+  color: black;
+}
+
+#mainNav.servicesNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+#mainNav.servicesNav .navbar-nav .nav-item .nav-link.active, #mainNav.servicesNav .navbar-nav .nav-item .nav-link:hover {
+  color: #cdba6d;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
+    transition: background-color 0.5s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+
+  #mainNav.servicesNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: white;
     transition: background-color 0.5s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
 
@@ -95,6 +120,20 @@ header.masthead {
   text-align: center;
   color: #fff;
   background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../assets/img/bookshelf.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+header.masthead-services {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: black;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%),
+  /* url("../assets/img/bookshelf.jpg"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
